@@ -1,4 +1,3 @@
-const pokemonList = [];
 const kanto = [];
 const johto = [];
 const hoenn = [];
@@ -105,10 +104,6 @@ function output(region) {
   );
   document.querySelector("article").innerHTML = html.join("");
 };
-
-function region(pokemonList) {
-  
-}
 
 const selectRegion = document.getElementById("selectRegion");
 if (selectRegion) {
