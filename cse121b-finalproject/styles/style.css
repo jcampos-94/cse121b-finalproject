@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pokemonCard {
+    display: grid;
+    justify-self: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    margin-top: -10px;
+}

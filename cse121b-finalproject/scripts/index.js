@@ -44,44 +44,44 @@ function createPokemon(pokemonData) {
   };
   if (elementHtml.pokemonId <= 151) {
     kanto.push(elementHtml);
+    sortList(kanto);
   }
   else if (elementHtml.pokemonId <= 251) {
     johto.push(elementHtml);
+    sortList(johto);
   }
   else if (elementHtml.pokemonId <= 386) {
     hoenn.push(elementHtml);
+    sortList(hoenn);
   }
   else if (elementHtml.pokemonId <= 493) {
     sinnoh.push(elementHtml);
+    sortList(sinnoh);
   }
   else if (elementHtml.pokemonId <= 649) {
     unova.push(elementHtml);
+    sortList(unova);
   }
   else if (elementHtml.pokemonId <= 721) {
     kalos.push(elementHtml);
+    sortList(kalos);
   }
   else if (elementHtml.pokemonId <= 809) {
     alola.push(elementHtml);
+    sortList(alola);
   }
   else if (elementHtml.pokemonId <= 898) {
     galar.push(elementHtml);
+    sortList(galar);
   }
   else if (elementHtml.pokemonId <= 905) {
     hisui.push(elementHtml);
+    sortList(hisui);
   }
   else if (elementHtml.pokemonId <= 1008) {
     paldea.push(elementHtml);
+    sortList(paldea);
   }
-  sortList(kanto);
-  sortList(johto);
-  sortList(hoenn);
-  sortList(sinnoh);
-  sortList(unova);
-  sortList(kalos);
-  sortList(alola);
-  sortList(galar);
-  sortList(hisui);
-  sortList(paldea);
 }
 
 function sortList(list) {
@@ -95,12 +95,12 @@ const getTypesOfPokemon = (pokemon) => {
 
 function output(region) {
   const html = region.map(
-    (pokemon) => `
+    (pokemon) => `<div class = "pokemonCard">
     <h2>Pokemon Name: ${pokemon.pokemonName}</h2>
     <h3>Pokedex Number: ${pokemon.pokemonId}</h3>
     <h3>Types: ${pokemon.pokemonTypes}</h3>
     <img src="${pokemon.pokemonImage}" />
-    `
+    </div>`
   );
   document.querySelector("article").innerHTML = html.join("");
 };
