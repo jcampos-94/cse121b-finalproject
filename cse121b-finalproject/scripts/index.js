@@ -91,7 +91,7 @@ function createPokemon(pokemonData) {
     hisui.push(elementHtml);
     sortList(hisui);
   }
-  else if (elementHtml.pokemonId <= 1008) {
+  else if (elementHtml.pokemonId >= 905) {
     paldea.push(elementHtml);
     sortList(paldea);
   }
